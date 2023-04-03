@@ -1,0 +1,48 @@
+{
+"products":[
+    {
+      "id":1,
+      "image":"1.png",
+      "productname":"Рождение Венеры",
+      "autor":"Сандро Ботичелли",
+      "oldprice":"2 000 000 $",
+      "newprice":"1 000 000 $",
+      "incart":false,
+      "available":true
+
+    },
+    {
+      "id":2,
+      "image":"2.png",
+      "productname":"Тайная вечеря",
+      "autor":"Леонардо да Винчи",
+      "oldprice":"",
+      "newprice":"3 000 000 $",
+      "incart":false,
+      "available":true
+
+    },
+    {
+      "id":3,
+      "image":"3.png",
+      "productname":"Сотворение Адама",
+      "autor":"Микеланджело",
+      "oldprice":"6 000 000 $",
+      "newprice":"5 000 000 $",
+      "incart":false,
+      "available":true
+
+    },
+    {
+      "id":4,
+      "image":"4.png",
+      "productname":"Урок анатомии",
+      "autor":"Рембрандт",
+      "oldprice":"",
+      "newprice":"",
+      "incart":false,
+      "available":false
+
+    }
+]
+}  

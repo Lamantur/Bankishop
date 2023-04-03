@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <TopMenu @sendvalue=showinconsolename />
+    <T-main-wrapper :msge="text" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopMenu from './components/TopMenu'
+import TMainWrapper from './components/T-main-wrapper';
 
 export default {
+  data() {
+    return {
+      title: 'Картины эпохи Возрождения',
+      text: ''
+
+    }
+  },
+  methods: {
+    showinconsolename(data) {
+      this.text = data;
+    }
+  },
   name: 'App',
   components: {
-    HelloWorld
+    TopMenu,
+    TMainWrapper
   }
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+</script>
